@@ -24,10 +24,9 @@ function App() {
   // Perform serach for country
   const handleSearch = (e) => {
     let text = e.target.value;
-    setTimeout(() => {
-      let arr = country.filter((country) => country.name.common.toLowerCase().match(text.toLowerCase()));
-      setfilterCountry(arr);
-    }, "1000");
+    let arr = country.filter((country) => country.name.common.toLowerCase().match(text.toLowerCase()));
+    setfilterCountry(arr);
+
   }
 
 
@@ -47,6 +46,7 @@ function App() {
     <>
       <div className="searchDiv">
         <input className="search"
+          type="text"
           placeholder="Search for countries..."
           onChange={handleSearch}
         />
