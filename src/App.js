@@ -23,9 +23,9 @@ function App() {
 
   // Perform serach for country
   const handleSearch = (e) => {
-    let text = e.target.value;
-    let arr = country.filter((country) => country.name.common.toLowerCase().match(text.toLowerCase()));
-    setfilterCountry(arr);
+  let text = e.target.value;
+  let arr = country.filter((country) => country.name.common.toLowerCase().match(text.toLowerCase()));
+  setfilterCountry(arr);
 
   }
 
