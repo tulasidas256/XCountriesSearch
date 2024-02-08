@@ -102,11 +102,3 @@ describe("Country App Tests", () => {
   });
 });
 
-/*----------------------------------*/
-
-let text = country.filter((country)=> country.name.common.toLowerCase().match("ind"));
-  console.log("txt =>",text);
-
-  setTimeout(() => {
-  console.log("Delayed for 1 second.");
-}, "1000");
