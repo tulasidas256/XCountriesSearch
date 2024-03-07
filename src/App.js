@@ -37,10 +37,10 @@ function App() {
     fetchApi();
   }, []);
 
-
+/*
   // Render after searching
   useEffect(() => { }, [filterCountry]);
-
+*/
 
   return (
     <>
